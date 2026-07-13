@@ -108,7 +108,7 @@
           <!-- Profile Canvas Container -->
           <div class="absolute inset-4 rounded-3xl overflow-hidden bg-slate-900 z-20 shadow-2xl flex items-center justify-center">
             <img
-              src="/public/images/myImg.png"
+              src="/images/myImg.png"
               alt="Anas"
               referrerPolicy="no-referrer"
               class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
@@ -159,6 +159,9 @@
 </template>
 
 <script setup lang="ts">
+import { GraduationCap,
+  Sparkles,
+  ArrowUpRight } from 'lucide-vue-next'
 import { ref, computed } from 'vue';
 import { usePortfolioStore } from '../store';
 import { TRANSLATIONS } from '../translations';

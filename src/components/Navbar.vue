@@ -1,15 +1,15 @@
 <template>
   <nav
     id="main-nav"
-    :class="[
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+    :class="[           //
+      ' fixed top-0 left-0 right-0 z-50',
       scrolled
         ? 'bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm py-4'
         : 'bg-transparent py-6'
     ]"
   >
-    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
-      <!-- Logo / Brand -->
+      <div class="max-w-7xl mx-auto h-full px-6 flex items-center justify-between">
+  <!-- Logo / Brand -->
       <div
         id="nav-logo"
         class="flex items-center gap-2 font-sans font-bold text-xl cursor-pointer text-slate-950 dark:text-white"
@@ -70,10 +70,11 @@
 
         <!-- Quick Theme Toggle -->
         <button id="btn-special2"
-          @click="isOpen = !isOpen"
+          @click="toggleMenu"
           class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 cursor-pointer"
           aria-label="Toggle Menu"
         >
+        
         <span></span>
         <span></span>
         <span></span>
@@ -90,12 +91,15 @@
       @after-enter="endTransition"
       @leave="leaveTransition"
     >
+  
       <div
         v-if="isOpen"
         id="mobile-drawer"
-        class="lg:hidden w-full bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 overflow-hidden shadow-xl"
+        class="lg:hidden fixed left-0 right-0 top-20 bottom-0 z-40 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 shadow-xl overflow-y-auto"
       >
-        <div class="px-6 py-6 flex flex-col gap-5">
+      <!-- class="lg:hidden w-full bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800 overflow-hidden shadow-xl" -->
+
+        <div class="min-h-full px-6 py-6 flex flex-col gap-5">
           <ul class="flex flex-col gap-4">
             <li v-for="item in navItems" :key="item.id">
               <button
@@ -140,6 +144,7 @@ span {
 </style>
 
 <script setup lang="ts">
+import { Sparkles, Globe } from 'lucide-vue-next'
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { usePortfolioStore } from '../store';
 import { TRANSLATIONS } from '../translations';
@@ -147,6 +152,21 @@ import { TRANSLATIONS } from '../translations';
 const store = usePortfolioStore();
 const isOpen = ref(false);
 const scrolled = ref(false);
+
+import { watch } from 'vue'
+
+watch(isOpen, (value) => {
+  document.documentElement.style.overflow = value ? 'hidden' : ''
+  document.body.style.overflow = value ? 'hidden' : ''
+})
+onUnmounted(() => {
+  document.documentElement.style.overflow = ''
+  document.body.style.overflow = ''
+})
+
+const toggleMenu = () => {
+  isOpen.value = !isOpen.value
+}
 
 const t = computed(() => TRANSLATIONS[store.lang]);
 
@@ -163,7 +183,13 @@ const navItems = computed(() => [
 ]);
 
 const handleScroll = () => {
-  scrolled.value = window.scrollY > 20;
+  // document.getElementById('main-nav').style.backgroundColor = window.scrollY > 50 ? '#eeeeee' : 'transparent';
+
+  const nav = document.getElementById('main-nav');
+  if (!nav) return;
+
+  nav.style.backgroundColor = window.scrollY > 50 ? '#fff' : 'transparent'
+
 };
 
 onMounted(() => {
