@@ -479,8 +479,22 @@ export const PROJECTS: Project[] = [
     detailsAr: "مُصمم لتلبية الاحتياجات الطبية الأكثر تعقيداً، حيث يوفر إدارة مرنة لملفات الأطباء وحجز المواعيد الآلي، مع أرشيف طبي كامل وسجلات صحية مفصلة. تم بناؤه بهيكلية نوعية آمنة تضمن سلامة وسرعة انتقال البيانات الطبية الحساسة.",
     category: "TypeScript"
   },
-  {
+  {// update details
     id: 4,
+    title: "Employee Management System",
+    titleAr: "نظام إدارة الموظفين",
+    description: "Employee management platform for handling HR tasks and employee records.",
+    descriptionAr: "منصة إدارة الموظفين لمعالجة مهام الموارد البشرية وسجلات الموظفين.",
+    image: "/images/employee.png",
+    tech: ["HTML", "CSS", "TypeScript", "vue.js", "json", "REST API","node.js"],
+    live: "https://employees-tasks-ms.netlify.app/",
+    github: "https://github.com/anasAboAli",
+    details: "This employee management system is designed to streamline HR operations, featuring dynamic employee directories, role-based access controls, real-time task assignment, and comprehensive performance tracking. It integrates with REST APIs for data retrieval and updates, ensuring a seamless experience for HR managers and staff.",
+    detailsAr: "تم تصميم نظام إدارة الموظفين هذا لتبسيط عمليات الموارد البشرية، ويتميز بدليل الموظفين الديناميكي، والتحكم في الوصول بناءً على الدور الوظيفي، وتعيين المهام في الوقت الفعلي، وتتبع الأداء بشكل شامل. يتكامل مع واجهات REST API لاسترجاع البيانات وتحديثها، مما يضمن تجربة سلسة لمديري الموارد البشرية والموظفين.",
+    category: "Node.js"
+  },
+  {
+    id: 5,
     title: "WanderLust",
     titleAr: "موقع واندرلاست للسياحة",
     description: "Luxury travel website showcasing premium destinations and travel packages.",
@@ -494,7 +508,7 @@ export const PROJECTS: Project[] = [
     category: "Firebase"
   },
   {
-    id: 5,
+    id: 6,
     title: "Happiness Restaurant",
     titleAr: "موقع مطعم السعادة",
     description: "Restaurant website displaying delicious meals, offers and menus.",
@@ -508,7 +522,7 @@ export const PROJECTS: Project[] = [
     category: "Vue"
   },
   {
-    id: 6,
+    id: 7,
     title: "Movies Library",
     titleAr: "مكتبة سينما الأفلام",
     description: "Movies platform displaying latest movies and documentaries.",

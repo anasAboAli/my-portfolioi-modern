@@ -306,7 +306,7 @@ const modalImageError = ref(false);
 
 const t = computed(() => (TRANSLATIONS as any)[store.lang]);
 
-const categories = ['All', 'Vue', 'TypeScript', 'Firebase', 'REST API'];
+const categories = ['All', 'Vue', 'TypeScript', 'Firebase', 'REST API','Node.js'];
 
 const filteredProjects = computed(() => {
   return PROJECTS.filter((proj) => {
