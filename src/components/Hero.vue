@@ -27,7 +27,7 @@
             {{ t.heroName }}
           </span>
           <span class="text-2xl sm:text-3xl md:text-4xl text-teal-500 dark:text-teal-400 font-medium block">
-            {{ store.lang === 'en' ? 'Senior Frontend Engineer' : 'مطور واجهات أمامية محترف' }}
+            {{ store.lang === 'en' ? 'Full-Stack Web Developer' : 'مطور ويب متكامل' }}
           </span>
         </h1>
 

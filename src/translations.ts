@@ -22,14 +22,14 @@ export const TRANSLATIONS = {
     // Hero
     heroGreeting: "Hey There,",
     heroName: "I'm Anas",
-    heroIntro: "I am a Frontend Developer with 5 years of experience specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm a student focused on building accessible, human-centered products.",
+    heroIntro: "Hello, I’m Anas, a Full Stack Web Developer with 5 years of experience, specializing in building modern web applications using Vue.js, Node.js, Express.js, MySQL, and MongoDB. I develop complete web solutions that combine modern, user-friendly UI/UX with robust, secure, and scalable backend systems.",
     heroHireBtn: "Hire Me Now",
     heroResumeBtn: "View Resume",
 
     // About
     aboutTitle: "About Me",
     aboutSubtitle: "Creating digital experiences that live on the internet",
-    aboutText1: "Hello! My name is Anas and I enjoy creating things that live on the internet. I am a Frontend Developer with five years of experience building modern, responsive, and scalable user interfaces using modern frontend tools.",
+    aboutText1: "Hello! My name is Anas and I enjoy creating things that live on the internet. I am a Full-Stack Web Developer with five years of experience building modern, responsive, and scalable user interfaces using modern frontend tools.",
     aboutText2: "I believe clean code and thoughtful design are the foundation of successful digital products. My focus is always on delivering high-performance web applications with an excellent user experience. Currently, I am a Student, constantly learning and improving my skills.",
     aboutAttributesTitle: "Core Philosophy",
 
@@ -55,7 +55,7 @@ export const TRANSLATIONS = {
     skillsTitle: "Technical Skills",
     skillsSubtitle: "The tools, frameworks, and languages I specialize in",
     skillsCategoryWeb: "Web Core",
-    skillsCategoryVue: "Vue Ecosystem",
+    skillsCategoryVue: "Libraries & Frameworks",
     skillsCategoryOther: "Other Skills",
     skillsProgress: "Proficiency Level",
 
@@ -149,14 +149,14 @@ export const TRANSLATIONS = {
     // Hero
     heroGreeting: "أهلاً بك،",
     heroName: "أنا أنس",
-    heroIntro: "أنا مطور واجهات أمامية بخبرة 5 سنوات متفاني في بناء وتصميم تجارب رقمية استثنائية. حالياً، أنا طالب أركز على تطوير منتجات سهلة الاستخدام وتتمحور حول تلبية احتياجات الإنسان.",
+    heroIntro: "مرحبًا، أنا أنس، مطور Full Stack Web Developer مع 5 سنوات خبرة متخصص في بناء تطبيقات الويب الحديثة باستخدام Vue.js، Node.js، Express.js، MySQL، وMongoDB، أعمل على تطوير حلول ويب متكاملة تجمع بين واجهات استخدام عصرية وسهلة الاستخدام (UI/UX) وأنظمة خلفية قوية وآمنة وقابلة للتوسع.",
     heroHireBtn: "وظفني الآن",
     heroResumeBtn: "عرض السيرة الذاتية",
 
     // About
     aboutTitle: "نبذة عني",
     aboutSubtitle: "ابتكار تجارب رقمية تنبض بالحياة على شبكة الإنترنت",
-    aboutText1: "مرحباً! اسمي أنس وأنا شغوف بابتكار وتطوير برمجيات وتطبيقات الويب. أنا مطور واجهات أمامية بخبرة خمس سنوات في بناء واجهات مستخدم حديثة، متجاوبة وقابلة للتطوير باستخدام أحدث التقنيات.",
+    aboutText1: "مرحباً! اسمي أنس وأنا شغوف بابتكار وتطوير برمجيات وتطبيقات الويب. أنا مطور واجهات ويب متكاملة بخبرة خمس سنوات في بناء واجهات مستخدم حديثة، متجاوبة وقابلة للتطوير باستخدام أحدث التقنيات.",
     aboutText2: "أؤمن بأن الكود النظيف والتصميم المدروس هما الركيزتان الأساسيتان لنجاح أي منتج رقمي. ينصب تركيزي دائماً على تقديم تطبيقات ويب عالية الأداء مع تجربة مستخدم ممتازة. حالياً، أنا طالب، أسعى باستمرار للتعلم وتطوير مهاراتي.",
     aboutAttributesTitle: "فلسفتي الأساسية",
 
@@ -182,7 +182,7 @@ export const TRANSLATIONS = {
     skillsTitle: "المهارات التقنية",
     skillsSubtitle: "الأدوات والإطارات ولغات البرمجة التي أتميز بها",
     skillsCategoryWeb: "أساسيات الويب",
-    skillsCategoryVue: "بيئة عمل Vue",
+    skillsCategoryVue: "المكتبات وأطر العمل",
     skillsCategoryOther: "مهارات أخرى",
     skillsProgress: "مستوى الإتقان",
 
@@ -328,16 +328,20 @@ export const TECHNICAL_SKILLS = [
   { name: "SCSS", proficiency: 92, category: "web", icon: "Sass" },
   { name: "JavaScript", proficiency: 96, category: "web", icon: "Javascript" },
   { name: "TypeScript", proficiency: 90, category: "web", icon: "Typescript" },
+  { name: "PHP", proficiency: 75, category: "web", icon: "Php" },
+
+  //conver category to libraries & frameworks
+  { name: "Vue.js", proficiency: 96, category: "frameworks", icon: "Vue" },
+  { name: "Node.js", proficiency: 96, category: "frameworks", icon: "Node" },
+  { name: "Laravel", proficiency: 96, category: "frameworks", icon: "Laravel" },
+
   
-  { name: "Vue.js", proficiency: 96, category: "vue", icon: "Vue" },
-  { name: "Pinia", proficiency: 94, category: "vue", icon: "Pinia" },
-  { name: "Vue Router", proficiency: 95, category: "vue", icon: "Route" },
-  { name: "REST API", proficiency: 92, category: "vue", icon: "Api" },
-  { name: "Firebase", proficiency: 85, category: "vue", icon: "Firebase" },
   
   { name: "Java", proficiency: 80, category: "other", icon: "Java" },
-  { name: "PHP", proficiency: 75, category: "other", icon: "Php" },
+  { name: "Pinia", proficiency: 94, category: "other", icon: "Pinia" },
+  { name: "REST API", proficiency: 92, category: "other", icon: "Api" },  
   { name: "MySQL", proficiency: 82, category: "other", icon: "Database" },
+  { name: "Firebase", proficiency: 85, category: "other", icon: "Firebase" },
   { name: "Figma to Code", proficiency: 96, category: "other", icon: "Figma" },
   { name: "Responsive Web Design", proficiency: 98, category: "other", icon: "Monitor" },
   { name: "Git & GitHub", proficiency: 90, category: "other", icon: "Github" }
@@ -373,11 +377,11 @@ export const SERVICES: ServiceItem[] = [
   },
   {
     id: 4,
-    title: "Vue.js Development",
-    titleAr: "تطوير بيئة عمل Vue.js",
-    description: "Implementing optimized architectures using Composition API, Pinia stores, and Vue Router.",
-    descriptionAr: "تطوير وتطبيق معماريات برمجية محسنة باستخدام Composition API ومخازن Pinia للتحكم بالبيانات.",
-    iconName: "Compass",
+    title: "Backend Development",
+    titleAr: "تطوير الواجهات الخلفية",
+    description: "Backend Developer specializing in building and developing APIs and backend systems using **Laravel, PHP, Node.js, and Express.js**.",
+    descriptionAr: "مطور Backend متخصص في بناء وتطوير APIs والأنظمة الخلفية باستخدام Laravel وPHP وNode.js وExpress.js",
+    iconName: "Code2",
     colorClass: "from-cyan-500 to-emerald-500"
   },
   {
@@ -541,8 +545,8 @@ export const TIMELINE: TimelineItem[] = [
   {
     id: 1,
     year: "2024 - Present",
-    title: "Lead Frontend Engineer",
-    titleAr: "كبير مطوري الواجهات الأمامية",
+    title: "Frontend Engineer",
+    titleAr: "مطور الواجهات الأمامية",
     organization: "Creative Digital Studio",
     organizationAr: "استوديو الإبداع الرقمي",
     description: "Directing UI architectures for scalable SaaS web portals. Architecting modular reusable component structures, enforcing strict TypeScript models, and mentoring junior engineers.",
@@ -552,12 +556,12 @@ export const TIMELINE: TimelineItem[] = [
   {
     id: 2,
     year: "2022 - 2024",
-    title: "Senior Vue.js Developer",
-    titleAr: "مطور Vue.js أقدم",
+    title: "Senior Node.js Developer",
+    titleAr: "مطور Node.js أقدم",
     organization: "TechVibe Solutions",
     organizationAr: "حلول تيك فايب البرمجية",
-    description: "Developed and optimized high-performance customer-facing dashboards. Reduced rendering cycles by 35% through bundle optimization, dynamic chunk splitting, and memoized selectors.",
-    descriptionAr: "تطوير وتحسين لوحات تحكم متقدمة وموجهة للعملاء، وتخفيض فترات المعالجة والتحميل بنسبة 35% من خلال ضغط الموارد والتقسيم الذكي للملفات.",
+    description: "Senior Node.js Developer specializing in scalable APIs, backend systems, and secure, high-performance applications.",
+    descriptionAr: "مطور Node.js أول متخصص في تطوير واجهات برمجية قابلة للتوسع، وأنظمة خلفية، وتطبيقات آمنة وعالية الأداء.",
     type: "work"
   },
   {
@@ -589,8 +593,8 @@ export const FAQS: FAQItem[] = [
     id: 1,
     question: "Do you build full-stack applications or only frontend development?",
     questionAr: "هل تقوم بتطوير تطبيقات الويب الكاملة (Full-Stack) أم تركز فقط على الواجهات الأمامية؟",
-    answer: "While my deep specialization is Senior Frontend Engineering (delivering highly refined visual animations, high-performance rendering, and intuitive state logic), I also regularly build secure Node.js backend pipelines, handle REST/GraphQL integrations, and design databases like Firebase, PostgreSQL, and MySQL.",
-    answerAr: "بينما ينصب تخصصي الدقيق على هندسة الواجهات الأمامية (تقديم حركات بصرية راقية، سرعة معالجة عالية، وإدارة دقيقة للحالة البرمجية)، فإنني أيضاً أقوم ببناء خوادم برمجية متكاملة باستخدام Node.js، ودمج بوابات الـ REST/GraphQL، وتصميم قواعد البيانات السحابية والمحلية مثل Firebase و PostgreSQL."
+    answer: "While my deep specialization is Senior Frontend Engineering (delivering highly refined visual animations, high-performance rendering, and intuitive state logic), I also regularly build secure Node.js, Laravel backend pipelines, handle REST/GraphQL integrations, and design databases like Firebase, PostgreSQL, and MySQL.",
+    answerAr: "بينما ينصب تخصصي الدقيق على هندسة الواجهات الأمامية (تقديم حركات بصرية راقية، سرعة معالجة عالية، وإدارة دقيقة للحالة البرمجية)، فإنني أيضاً أقوم ببناء خوادم برمجية متكاملة باستخدام Node.js, Laravel، ودمج بوابات الـ REST/GraphQL، وتصميم قواعد البيانات السحابية والمحلية مثل Firebase و PostgreSQL."
   },
   {
     id: 2,
